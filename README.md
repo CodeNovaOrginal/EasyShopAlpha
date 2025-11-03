@@ -3,7 +3,7 @@
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 [![PHP Version](https://img.shields.io/badge/PHP-%3E%3D%207.0-777BB4.svg)](https://www.php.net/)
 [![MySQL](https://img.shields.io/badge/MySQL-8.0-blue.svg)](https://www.mysql.com/)
-[![YouTube](https://img.shields.io/badge/Youtube-@CodeNovaOrginal-red.svg)]([https://www.mysql.com/](https://www.youtube.com/@CodeNovaOrginal))
+[![YouTube](https://img.shields.io/badge/Youtube-@CodeNovaOrginal-0-FF0000.svg)]([https://www.mysql.com/](https://www.youtube.com/@CodeNovaOrginal))
 
 EasyShop is a simple, powerful, and customizable e-commerce Content Management System (CMS) designed for ease of use and flexibility. It provides all the essential tools to run an online store without the complexity of larger platforms.
 
