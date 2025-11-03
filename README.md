@@ -5,7 +5,7 @@
 [![MySQL](https://img.shields.io/badge/MySQL-5.7-orange.svg)](https://www.mysql.com/)
 [![YouTube](https://img.shields.io/badge/Youtube-@CodeNovaOrginal-FF0000.svg)](https://www.youtube.com/@CodeNovaOrginal)
 [![Static Badge](https://img.shields.io/badge/Github-CodeNovaOrginal-08872B)](https://github.com/CodeNovaOrginal)
-![GitHub Release](https://img.shields.io/github/v/release/CodeNovaOrginal/EasyShopAlpha?include_prereleases&display_name=release)
+[![GitHub Release](https://img.shields.io/github/v/release/CodeNovaOrginal/EasyShopAlpha?include_prereleases&display_name=release)](#)
 
 
 EasyShop is a simple, powerful, and customizable e-commerce Content Management System (CMS) designed for ease of use and flexibility. It provides all the essential tools to run an online store without the complexity of larger platforms.
