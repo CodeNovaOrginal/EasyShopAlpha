@@ -1,0 +1,406 @@
+/* --- BlueNight Admin Theme --- */
+
+/* Google Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
+/* Basic Reset & Body */
+body {
+    background-color: #1a1d23;
+    font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    color: #c3c4c7;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Main Container */
+main.container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+/* Navigation */
+nav {
+    background-color: #23282d;
+    border: 1px solid #1a1d23;
+    padding: 0 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    border-radius: 4px;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+nav li {
+    margin: 0;
+}
+
+nav a {
+    display: block;
+    padding: 1rem;
+    text-decoration: none;
+    color: #c3c4c7;
+    font-weight: 400;
+    border-radius: 4px;
+    transition: all 0.2s ease-in-out;
+}
+
+nav a:hover {
+    background-color: #32373c;
+    color: #00a0d2;
+}
+
+nav a[aria-current="page"] {
+    color: #00a0d2;
+    font-weight: 600;
+}
+
+nav strong {
+    font-size: 1.2em;
+    color: #f0f0f1;
+}
+
+/* Headings */
+h1 {
+    font-size: 1.6em;
+    font-weight: 600;
+    margin-bottom: 1em;
+    color: #f0f0f1;
+}
+
+/* Forms */
+form {
+    background: #23282d;
+    padding: 2rem;
+    border: 1px solid #1a1d23;
+    border-radius: 4px;
+}
+
+label {
+    font-weight: 600;
+    color: #f0f0f1;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+textarea,
+select {
+    width: 100%;
+    border: 1px solid #555;
+    background-color: #1a1d23;
+    color: #c3c4c7;
+    box-shadow: 0 0 0 transparent;
+    border-radius: 4px;
+    padding: 0.5rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+textarea:focus,
+select:focus {
+    border-color: #00a0d2;
+    box-shadow: 0 0 0 1px #00a0d2;
+    outline: 1px solid transparent;
+}
+
+/* Custom Select Dropdown */
+select {
+    padding: 0.5rem 2.5rem 0.5rem 0.75rem;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23a8d4ea' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 0.75rem center;
+    background-size: 1em;
+}
+
+/* Buttons */
+button, a[role="button"] {
+    background-color: #00a0d2;
+    border-color: #00a0d2;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: none;
+    border: 1px solid;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 400;
+    padding: 0.5rem 1rem;
+    vertical-align: middle;
+    transition: all 0.2s ease-in-out;
+}
+
+button:hover, a[role="button"]:hover {
+    background-color: #0091cd;
+    border-color: #0091cd;
+}
+
+button.secondary, a[role="button"].secondary {
+    background-color: #32373c;
+    border-color: #555;
+    color: #c3c4c7;
+}
+
+button.secondary:hover, a[role="button"].secondary:hover {
+    background-color: #444;
+    border-color: #777;
+    color: #f0f0f1;
+}
+
+button.contrast, a[role="button"].contrast {
+    background-color: #dc3232;
+    border-color: #dc3232;
+    color: #fff;
+}
+
+button.contrast:hover, a[role="button"].contrast:hover {
+    background-color: #c92222;
+    border-color: #c92222;
+}
+
+/* Tables */
+table {
+    background: #23282d;
+    border: 1px solid #1a1d23;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 0.75rem 1rem;
+    text-align: left;
+    border-bottom: 1px solid #1a1d23;
+}
+
+thead th {
+    font-weight: 600;
+    background-color: #32373c;
+    border-bottom: 1px solid #1a1d23;
+    color: #f0f0f1;
+}
+
+tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* Error Messages */
+article[style*="background-color: #fcf0f1"] {
+    background-color: #4a2f2f !important;
+    border-left: 4px solid #dc3232 !important;
+    padding: 1rem !important;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+    color: #f0f0f1;
+}
+
+/* --- Alpha Tag --- */
+.alpha-tag {
+    font-size: 0.6em;
+    padding: 0.2em 0.4em;
+    border-radius: 3px;
+    background-color: #006ba1;
+    color: #a8d4ea;
+    vertical-align: middle;
+    margin-left: 0.5rem;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+/* --- Dashboard Components --- */
+.welcome-message {
+    background-color: #23282d;
+    border-left: 4px solid #00a0d2;
+    padding: 1rem 1.5rem;
+    margin-bottom: 2rem;
+    border-radius: 4px;
+}
+.welcome-message h2 {
+    margin-top: 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #f0f0f1;
+}
+.welcome-message p {
+    margin-bottom: 0;
+    font-size: 1rem;
+}
+
+.stat-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.stat-card {
+    background: #23282d;
+    padding: 1.5rem;
+    border: 1px solid #32373c;
+    border-radius: 4px;
+}
+.stat-card h3 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #a8d4ea;
+    text-transform: uppercase;
+}
+.stat-card .stat-number {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0;
+    color: #f0f0f1;
+}
+.stat-card .stat-description {
+    font-size: 0.9rem;
+    color: #8c949e;
+    margin-top: 0.5rem;
+}
+
+/* --- Inline Form Group --- */
+.form-group-inline {
+    display: flex;
+    align-items: flex-end;
+    gap: 1rem;
+}
+.form-group-inline label {
+    margin-bottom: 0;
+    flex-shrink: 0;
+}
+.form-group-inline select {
+    width: auto;
+    flex-grow: 1;
+}
+
+/* --- Button Group --- */
+.button-group {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+
+/* --- Button Group Specifics --- */
+.button-group button,
+.button-group a[role="button"] {
+    margin: 0;
+    padding: 0.5rem 1rem;
+    display: inline-block;
+    text-align: center;
+}
+
+/* --- Form Layout Reset --- */
+form label,
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form input[type="number"],
+form textarea,
+form select {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 1rem;
+}
+form label {
+    margin-bottom: 0.5rem;
+}
+
+/* --- Slogan Textarea --- */
+#slogan {
+    width: 100% !important;
+    resize: none;
+    min-height: 2.5rem;
+    overflow-y: hidden;
+}
+
+/* --- Dropdown Menu --- */
+nav ul li.dropdown {
+    position: relative;
+}
+nav ul li.dropdown > a.dropdown-toggle::after {
+    content: ' ▾';
+    font-size: 0.8em;
+}
+nav ul li.dropdown ul.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #23282d;
+    border: 1px solid #32373c;
+    box-shadow: 0 2px 5px rgba(0,0,0,.3);
+    border-radius: 4px;
+    min-width: 200px;
+    z-index: 1000;
+    padding: 0;
+}
+nav ul li.dropdown:hover ul.dropdown-menu {
+    display: block;
+}
+nav ul li.dropdown ul.dropdown-menu li {
+    display: block;
+    width: 100%;
+    margin: 0;
+}
+nav ul li.dropdown ul.dropdown-menu li a {
+    display: block;
+    padding: 0.75rem 1rem;
+    color: #c3c4c7;
+    text-decoration: none;
+    white-space: nowrap;
+    border-radius: 0;
+}
+nav ul li.dropdown ul.dropdown-menu li a:hover {
+    background-color: #32373c;
+    color: #00a0d2;
+}
+nav ul li.dropdown ul.dropdown-menu li a[aria-current="page"] {
+    color: #00a0d2;
+    font-weight: 600;
+    background-color: #1e2933;
+}
+
+/* --- Payment Provider Settings --- */
+.payment-provider-settings {
+    background-color: #23282d;
+    border: 1px solid #1a1d23;
+}
+.payment-provider-settings h4 {
+    margin-top: 0;
+    color: #f0f0f1;
+}
+
+/* --- Order Details Page --- */
+.order-summary-card, .order-items-card {
+    background-color: #23282d;
+    border: 1px solid #1a1d23;
+    box-shadow: 0 1px 1px rgba(0,0,0,.04);
+}
+.order-summary-card h2, .order-items-card h2 {
+    color: #f0f0f1;
+    border-bottom-color: #32373c;
+}
+.summary-item {
+    border-bottom-color: #32373c;
+}
+.summary-item:last-child {
+    color: #00a0d2; /* Use theme accent color for total */
+}
+.status-update-form {
+    border-top-color: #32373c;
+}
