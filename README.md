@@ -7,24 +7,25 @@
 [![Static Badge](https://img.shields.io/badge/Github-CodeNovaOrginal-08872B)](https://github.com/CodeNovaOrginal)
 [![GitHub Release](https://img.shields.io/github/v/release/CodeNovaOrginal/EasyShopAlpha?include_prereleases&display_name=release)](#)
 
-
 EasyShop is a simple, powerful, and customizable e-commerce Content Management System (CMS) designed for ease of use and flexibility. It provides all the essential tools to run an online store without the complexity of larger platforms.
-
 
 ## ✨ Features
 
 -   🚀 **Web-based Installer:** Get your store running in minutes with a simple, guided setup process.
--   👤 **User Management:** Secure customer registration, login, and account management.
--   📦 **Full Product CRUD:** Easily Create, Read, Update, and Delete products and categories.
--   🎨 **Dynamic Theming:** A powerful theming system for both the admin panel and the public storefront.
--   🛒 **Shopping Cart:** A fully functional session-based shopping cart.
+-   👤 **User Management:** Secure customer registration, login, and account management with order history.
+-   📦 **Full Product CRUD:** Easily Create, Read, Update, and Delete products with image uploads.
+-   🛒 **Shopping Cart & Checkout:** A fully functional session-based shopping cart with a complete checkout flow.
+-   💳 **Payment Integration:** Securely accept payments via **PayPal** or a **Local Pay** option for offline payments.
+-   📊 **Order Management:** A comprehensive admin panel to view, manage, and update customer order statuses.
+-   🎨 **Dynamic Theming:** A powerful theming system for both the admin panel (GrayPress, BlueNight) and the public storefront (Alpha 1).
+-   🔄 **Update Checker:** A built-in tool to check for new EasyShop versions directly from the admin panel.
 -   📄 **Custom Error Pages:** Clean, professional 404 and 500 error pages.
 -   📱 **Responsive Design:** A modern, mobile-friendly storefront for your customers.
 -   🔒 **Secure:** Built with security best practices, including prepared statements and password hashing.
 
 ## 🛠️ Tech Stack
 
--   **Backend:** PHP 8.x
+-   **Backend:** PHP 7.x
 -   **Database:** MySQL / MariaDB
 -   **Frontend:** Vanilla HTML, CSS, and JavaScript
 -   **Server:** Apache (with `.htaccess` for routing)
@@ -34,7 +35,7 @@ EasyShop is a simple, powerful, and customizable e-commerce Content Management S
 Before you begin, ensure you have the following installed:
 
 -   A web server like Apache or Nginx.
--   PHP 8.0 or greater.
+-   PHP 7.0 or greater.
 -   MySQL or MariaDB.
 -   A web browser.
 
@@ -66,17 +67,28 @@ Before you begin, ensure you have the following installed:
 ### For the Store Admin
 
 1.  **Log in** to the admin panel at `/admin`.
-2.  **Add Products:** Go to `Products -> Add New Product` to list your items.
-3.  **Customize Your Store:** Go to `Settings -> Personalize` to change themes and `Settings -> Store Info` to update your store name and slogan.
-4.  **Manage Orders:** View and manage incoming customer orders.
+2.  **Add Products:** Go to `Shop -> Products` to add and manage your items.
+3.  **Manage Orders:** Go to `Shop -> Orders` to view and manage incoming customer orders.
+4.  **Configure Payments:** Go to `Settings -> Payment` to enable and configure PayPal or Local Pay options.
+5.  **Customize Your Store:** Go to `Settings -> Personalize` to change themes and `Settings -> Store Info` to update your store name and slogan.
+6.  **Check for Updates:** Go to `Settings -> EasyShop` to see if a new version is available.
 
 ### For the Customer
 
 1.  **Browse Products:** Customers can visit your homepage to view all available products.
-2.  **View Product Details:** Click on a product to see more information.
-3.  **Add to Cart:** Add items to their shopping cart and adjust quantities.
-4.  **Checkout:** Proceed through the checkout process to place an order (checkout flow to be implemented).
-5.  **Manage Account:** Customers can register, log in, and view their order history.
+2.  **View Product Details:** Click on a product to see more information and add it to their cart.
+3.  **Checkout:** Proceed through the checkout process, choose a payment method, and place an order.
+4.  **Manage Account:** Customers can register, log in, and view their order history on their account page.
+
+## 🗺️ Roadmap
+
+Here are some features we're planning for future releases:
+
+-   [ ] Email Notifications (Order Confirmations, Status Updates)
+-   [ ] Product Search Functionality
+-   [ ] Product Reviews and Ratings
+-   [ ] Discount Coupon System
+-   [ ] Wishlist Functionality
 
 ## 🤝 Contributing
 
